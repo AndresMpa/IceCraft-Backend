@@ -1,0 +1,30 @@
+{
+  "name": "backend-lab-software",
+  "version": "1.0.0",
+  "description": "Backend del IceCraft",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dreamland-Code/backend-lab-software.git"
+  },
+  "keywords": [
+    "Backend",
+    "Express",
+    "Socket.io",
+    "SQL",
+    "NoSQL"
+  ],
+  "author": "DreamLand-Code",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dreamland-Code/backend-lab-software/issues"
+  },
+  "homepage": "https://github.com/Dreamland-Code/backend-lab-software#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.0.1"
+  }
+}
