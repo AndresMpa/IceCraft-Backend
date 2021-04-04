@@ -1,0 +1,18 @@
+{
+  "development": {
+    "Borrar_es_item_esto_es_un_comentario": "Esta data parte del trabajo de chami",
+    "username": "Alguna_madre_que_genera_el_remotesql",
+    "password": "Otra_madre_que_genera_el_remotesql" ,
+    "database": "Otra_wea_que_genera_el_remotesql",
+    "host": "remotemysql.com",
+    "dialect": "mysql"
+  },
+  "test": {
+    "dialect": "sqlite",
+    "storage": "./database.sqlite3"
+  },
+  "production": {
+    "dialect": "sqlite",
+    "storage": "./database.sqlite3"
+  }
+}

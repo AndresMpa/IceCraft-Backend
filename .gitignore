@@ -7,7 +7,7 @@ bin-release/
 # Other files and folders
 .settings/
 ./.tarea/
-./node_modules/
+node_modules/
 
 # Executables
 *.swf
