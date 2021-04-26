@@ -13,23 +13,23 @@ module.exports = (sequelize, DataTypes) => {
   }
   Usuario.init(
     {
-      DNI: DataTypes.INTEGER(10),
-      Nombre: DataTypes.STRING(50),
-      Apellidos: DataTypes.STRING(50),
-      FechaNacimiento: DataTypes.DATE,
-      LugarNacimiento: DataTypes.STRING(50),
-      Correo: {
+      dni: DataTypes.INTEGER(10),
+      nombre: DataTypes.STRING(50),
+      apellidos: DataTypes.STRING(50),
+      fechaNacimiento: DataTypes.DATE,
+      lugarNacimiento: DataTypes.STRING(50),
+      correo: {
         type: DataTypes.STRING(50),
         allowNull: false,
         unique: true,
       },
-      Genero: DataTypes.BOOLEAN,
-      Direccion: DataTypes.STRING(50),
-      TemaLiterario: DataTypes.STRING(50),
-      Tipo: DataTypes.INTEGER(3),
-      Usuario: DataTypes.STRING(50),
+      genero: DataTypes.BOOLEAN,
+      direccion: DataTypes.STRING(50),
+      temaLiterario: DataTypes.STRING(50),
+      tipo: DataTypes.INTEGER(3),
+      usuario: DataTypes.STRING(50),
       password: DataTypes.STRING(50),
-      ImagenPerfil: DataTypes.STRING,
+      imagenPerfil: DataTypes.STRING,
     },
     {
       sequelize,
