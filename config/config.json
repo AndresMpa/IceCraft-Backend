@@ -1,17 +1,17 @@
 {
-    "development": {
-        "username": "XXZ7QaA0Vw",
-        "password": "RCE5Qkli8u" ,
-        "database": "XXZ7QaA0Vw",
-        "host": "remotemysql.com",
-        "dialect": "mysql"
-    },
-    "test": {
-        "dialect": "sqlite",
-        "storage": "./database.sqlite3"
-    },
-    "production": {
-        "dialect": "sqlite",
-        "storage": "./database.sqlite3"
-    }
+  "development": {
+    "username": "yu5GI3dL0a",
+    "password": "O0KLNlzNEV",
+    "database": "yu5GI3dL0a",
+    "host": "remotemysql.com",
+    "dialect": "mysql"
+  },
+  "test": {
+    "dialect": "sqlite",
+    "storage": "./database.sqlite3"
+  },
+  "production": {
+    "dialect": "sqlite",
+    "storage": "./database.sqlite3"
+  }
 }
