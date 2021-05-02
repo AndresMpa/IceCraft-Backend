@@ -3,16 +3,29 @@ const bcrypt = require("bcryptjs");
 const tokenService = require("../services/token.js");
 
 module.exports = {
+  createAccount: async (req, res, next) => {
+    try {
+      console.log(req.body.password);
+      req.body.password = bcrypt.hashSync(req.body.password, 8);
+      const reg = await db.Usuario.create(req.body);
+      res.status(200).json(reg);
+    } catch (e) {
+      res.status(500).send({
+        message: "Ocurrio un error",
+      });
+      next(e);
+    }
+  },
   signin: async (req, res, next) => {
     try {
       let user = await db.Usuario.findOne({
         where: { usuario: req.body.usuario },
       });
       if (user) {
-        let passwordIsValid = bcrypt.compareSync(
-          req.body.password,
-          user.password
-        );
+        console.log("El usuario es: " + user);
+        console.log("Req: " + req.body.password + "\nPassword: " + user.password)
+        let passwordIsValid = bcrypt.compareSync(req.body.password, user.password);
+        console.log(passwordIsValid);
         if (passwordIsValid) {
           let tokenReturn = await tokenService.encode(user);
           res.status(200).send({ auth: true, tokenReturn });
@@ -22,7 +35,7 @@ module.exports = {
             .send({
               auth: false,
               accessToken: null,
-              reason: "Invalid Password!",
+              reason: "Clave incorrecta",
             });
         }
       } else {
