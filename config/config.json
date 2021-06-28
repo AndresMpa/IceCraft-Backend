@@ -7,10 +7,18 @@
     "dialect": "mysql"
   },
   "test": {
+    "username": "yu5GI3dL0a",
+    "password": "O0KLNlzNEV",
+    "database": "yu5GI3dL0a",
+    "host": "remotemysql.com",
     "dialect": "sqlite",
     "storage": "./database.sqlite3"
   },
   "production": {
+    "username": "yu5GI3dL0a",
+    "password": "O0KLNlzNEV",
+    "database": "yu5GI3dL0a",
+    "host": "remotemysql.com",
     "dialect": "sqlite",
     "storage": "./database.sqlite3"
   }
