@@ -8,6 +8,7 @@ bin-release/
 .settings/
 ./.tarea/
 node_modules/
+package-lock.json
 
 # Executables
 *.swf
