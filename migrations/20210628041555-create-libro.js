@@ -15,7 +15,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       genero: {
-        type: Sequelize.BOOLEAN
+        type: Sequelize.STRING
       },
       numeroPagina: {
         type: Sequelize.INTEGER
